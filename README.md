@@ -32,3 +32,17 @@ Options:
 ```
 .\BeaconSim.exe --config=targets.yaml --minInterval=30 --maxInterval=120 --loopCount=10
 ```
+
+🌐 Supported Protocols
+You can specify one or more protocols per target in your targets.yaml config file. BeaconSim will simulate connection attempts using the selected protocols and ports.
+
+| Protocol    | Description                                      | Notes                           |
+| ----------- | ------------------------------------------------ | ------------------------------- |
+| `ping`      | ICMP echo request (simulated)                    | Uses DNS resolution to simulate |
+| `http`      | HTTP GET request                                 | Port 80 by default              |
+| `https`     | HTTPS GET request (SSL/TLS)                      | Port 443 by default             |
+| `dns`       | DNS resolution via `Dns.GetHostAddressesAsync()` | Uses system resolver            |
+| `tcp`       | Raw TCP socket connection                        | Requires port(s) to be defined  |
+| `ftp`       | TCP connection on port 21                        | Simulates basic connection only |
+| `ssh`       | TCP connection on port 22                        | No authentication performed     |
+| `websocket` | WebSocket handshake (if implemented)             | Fallbacks to HTTP(s) if needed  |
