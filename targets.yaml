@@ -1,0 +1,18 @@
+targets:
+  - host: "8.8.8.8"
+    protocols: ["ping", "tcp"]
+    ports: [53]
+
+  - host: "google.com"
+    protocols: ["http", "tcp"]
+    ports: [80, 443]
+
+  - host: "1.1.1.1"
+    protocols: ["ping"]
+
+  - host: "github.com"
+    protocols: ["http"]
+
+  - host: "example.com"
+    protocols: ["ping", "http", "https", "dns", "tcp", "ftp", "websocket"]
+    ports: [80, 443, 21, 22]
