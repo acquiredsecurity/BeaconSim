@@ -1,4 +1,7 @@
+## BeaconSim - C2 Beacon Simulator
 Simulate Malware activity. Configure connections via different ports and protocls with Yaml.
+---
+
 
 <img width="611" alt="image" src="https://github.com/user-attachments/assets/f8c162a8-d24b-4732-99b5-42d4cd0a4686" />
 
@@ -10,7 +13,7 @@ PS C:\BeaconSim\> .\BeaconSim.exe --help
 BeaconSim - C2 Beacon Simulator
 ---------------------------------
 
-'''
+```
 Usage:
   BeaconSim.exe [--config=path] [--minInterval=N] [--maxInterval=N] [--loopCount=N]
 
@@ -20,11 +23,12 @@ Options:
   --maxInterval=N      Maximum delay in seconds between beacons (default: 300)
   --loopCount=N        Number of beacon attempts (-1 = infinite)
   --help, -h           Show this help menu and exit
-'''
+```
 
---
+---
 
-Example:
-'''
-  BeaconSim.exe --config=mytargets.yaml --minInterval=30 --maxInterval=120 --loopCount=10
-'''
+### Example:
+
+```
+BeaconSim.exe --config=mytargets.yaml --minInterval=30 --maxInterval=120 --loopCount=10
+```
