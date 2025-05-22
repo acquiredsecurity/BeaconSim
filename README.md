@@ -30,5 +30,5 @@ Options:
 ### Example:
 
 ```
-BeaconSim.exe --config=mytargets.yaml --minInterval=30 --maxInterval=120 --loopCount=10
+.\BeaconSim.exe --config=targets.yaml --minInterval=30 --maxInterval=120 --loopCount=10
 ```
