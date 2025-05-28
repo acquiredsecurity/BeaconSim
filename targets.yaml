@@ -1,8 +1,8 @@
 # C2 Server Configuration
-c2_server:
-  url: "http://localhost:8080"
-  agent_id: "agent_001"
-
+#c2_server:
+# url: "http://localhost:8080"
+# agent_id: "agent_001"
+#
 # Beacon timing (keep your existing settings)
 intervals:
   min_interval: 30
