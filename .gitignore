@@ -1,0 +1,6 @@
+# Ignore VS and build artifacts
+.vs/
+bin/
+obj/
+*.user
+*.suo
