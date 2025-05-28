@@ -1,18 +1,25 @@
+# C2 Server Configuration
+c2_server:
+  url: "http://localhost:8080"
+  agent_id: "agent_001"
+
+# Beacon timing (keep your existing settings)
+intervals:
+  min_interval: 30
+  max_interval: 120
+
+# Original targets (keeping for backwards compatibility, but won't be used in C2 mode)
 targets:
   - host: "8.8.8.8"
     protocols: ["ping", "tcp"]
     ports: [53]
-
   - host: "google.com"
     protocols: ["http", "tcp"]
     ports: [80, 443]
-
   - host: "1.1.1.1"
     protocols: ["ping"]
-
   - host: "github.com"
     protocols: ["http"]
-
   - host: "example.com"
     protocols: ["ping", "http", "https", "dns", "tcp", "ftp", "websocket"]
     ports: [80, 443, 21, 22]
