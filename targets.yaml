@@ -1,14 +1,14 @@
 # C2 Server Configuration
-#c2_server:
-# url: "http://localhost:8080"
-# agent_id: "agent_001"
-#
-# Beacon timing (keep your existing settings)
+c2_server:
+  url: "http://192.168.57.224:8080"
+  agent_id: "agent_001"
+
+# Beacon timing
 intervals:
   min_interval: 30
   max_interval: 120
 
-# Original targets (keeping for backwards compatibility, but won't be used in C2 mode)
+# Original targets (for simulation mode)
 targets:
   - host: "8.8.8.8"
     protocols: ["ping", "tcp"]
