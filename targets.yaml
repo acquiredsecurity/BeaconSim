@@ -1,4 +1,4 @@
-# C2 Server Configuration
+# C2 Server Configuration - remove lines 1-5 or comment them out to utilize original targets.
 c2_server:
   url: "http://192.168.57.224:8080"
   agent_id: "agent_001"
