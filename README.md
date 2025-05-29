@@ -19,9 +19,11 @@ Great for testing Threat Intelligence feeds, verifying detection logic in EDR an
 ## 🚀 Quick Start
 
 ### Simulation Mode (Original)
-```bash
+```powershell
 .\BeaconSim.exe --config=targets.yaml --minInterval=30 --maxInterval=120 --loopCount=10
 ```
+Remove the C2 settings from the Yaml if you want to use theoriginal targets.
+
 
 ### C2 Agent Mode (New)
 ```bash
